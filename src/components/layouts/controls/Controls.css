@@ -1,0 +1,131 @@
+.controls {
+    background-color: #ebebf0;
+    box-shadow: 1px 0px 3px 0px rgba(125, 125, 125, .2);
+    padding: 18px 24px;
+    z-index: 1001;
+}
+
+.controls > .options > span {
+    display: block;
+    background-color: #45444a;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.controls > .options > div {
+    padding: 0 16px;
+    margin-top: 12px;
+}
+
+.controls > .options > div > .title, .controls > .options > div > .value {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.controls > .options > div > .title {
+    width: 75%;
+    text-align: left;
+}
+
+.controls > .options > div > .value {
+    width: 25%;
+    text-align: right;
+}
+
+.controls > .options.disabled > div > .title, .controls > .options.disabled > div > .value {
+    color: #afafb4;
+}
+
+.controls > .options > div > .button {
+    outline: none;
+    height: 38px;
+    line-height: 36px;
+    border: 1px dashed #707078;
+    color: #707078;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: .2s;
+    font-size: 12px;
+}
+
+.controls > .options > div > .button:hover {
+    border: 1px dashed #ac9753;
+    color: #ac9753;
+}
+
+.controls > .options.disabled > div > .button {
+    border: 1px dashed #afafb4;
+    color: #afafb4;
+    cursor: not-allowed;
+}
+
+.controls > .options.disabled > div > .button:hover {
+    border: 1px dashed #afafb4;
+    color: #afafb4;
+}
+
+input[type=range] {
+    outline: none;
+    background-color: transparent;
+    height: 18px;
+    appearance: none;
+    margin: 5px 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type=range]:disabled {
+    cursor: not-allowed;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0px;
+    background-color: transparent;
+    border-top: 1px solid #C8C7CD;
+    transition: .2s;
+}
+
+input[type=range]:hover::-webkit-slider-runnable-track {
+    border-top: 1px solid #ac9753;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 10px;
+    border-radius: 25px;
+    background-color: #707078;
+    cursor: pointer;
+    appearance: none;
+    margin-top: -5px;
+    transition: .1s;
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+    background-color: #ac9753;
+    height: 13px;
+    width: 13px;
+    margin-top: -6.5px;
+}
+
+input[type=range]:disabled::-webkit-slider-runnable-track {
+    border-top: 1px solid #dddddd;
+}
+
+input[type=range]:disabled::-webkit-slider-thumb {
+    height: 10px;
+    width: 10px;
+    border-radius: 25px;
+    background-color: #afafb4;
+    appearance: none;
+    margin-top: -5px;
+}

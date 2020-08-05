@@ -1,10 +1,21 @@
 import React, {Component} from 'react';
+import Header from './components/layouts/header/Header';
+import Canvas from './components/layouts/canvas/Canvas';
+import Controls from './components/layouts/controls/Controls';
+import Images from './components/layouts/images/Images';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
   render() {
-    return <></>;
+    return (
+      <div className="body">
+        <Header/>
+        <div className='container'>
+          <Controls/>
+          <Canvas/>
+          <Images/>
+        </div>
+      </div>
+    );
   }
-}
-
-export default App;
+};
