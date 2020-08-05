@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: 20vw 70vw 10vw;
+    grid-template-rows: calc(100vh - 54px);
+}
+
+.controls {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.canvas {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.images {
+    grid-area: 1 / 3 / 2 / 4;
+}

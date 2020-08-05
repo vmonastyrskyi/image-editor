@@ -1,0 +1,94 @@
+canvas {
+    background: rgb(220, 220, 220);
+    display: block;
+}
+
+.canvas {
+    position: relative;
+}
+
+.helper {
+    position: absolute;
+    bottom: 20px;
+    width: 340px;
+    height: 32px;
+    background-color: rgb(74, 74, 79);
+    border-radius: 25px;
+    left: calc(50% - 182px);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .75);
+    padding: 2px 24px;
+    display: flex;
+}
+
+.helper .size {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.helper > div {
+    align-content: center;
+    flex: 1 1 auto;
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+}
+
+.helper :nth-child(1) {
+    justify-content: flex-start;
+}
+
+.helper :nth-child(2) {
+    justify-content: center;
+}
+
+.helper :nth-child(3) {
+    justify-content: flex-end;
+}
+
+.helper .increase, .helper .decrease {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #bcbcbc;
+    padding: 0;
+    margin: 0 8px;
+    outline: none;
+    transition: .2s;
+}
+
+.helper .increase:hover, .helper .decrease:hover, .helper .compare:hover {
+    background-color: #36363a;
+    color: #ac9753;
+}
+
+.helper .percent {
+    font-size: 14px;
+    color: #bcbcbc;
+}
+
+.helper .compare {
+    height: 32px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0 16px;
+    color: #bcbcbc;
+    outline: none;
+    transition: .2s;
+}
+
+.helper .compare.disabled {
+    cursor: not-allowed;
+    color: #8c8c8c;
+}
+
+.helper .compare.disabled:hover {
+    background-color: transparent;
+    color: #8c8c8c;
+}
