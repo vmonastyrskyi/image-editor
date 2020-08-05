@@ -18,10 +18,10 @@ The main page:
 ![alt text](https://i.yapx.ru/Ia2Wr.png)
 
 Upload your image:
-![alt text](https://i.yapx.ru/Ia3R7.png)
+![alt text](https://i.yapx.ru/Ia5ew.png)
 
 Apply contour detection:
-![alt text](https://i.yapx.ru/Ia3V6.png)
+![alt text](https://i.yapx.ru/Ia5fH.png)
 
 ## License
 
